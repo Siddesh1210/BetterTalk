@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Better Talk</title>
+    <link rel="stylesheet" href="./assests/CSS/style.css">
+    <!-- Bootsrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color:#2c4964;font-size: 30px !important;font-weight: bolder;">Better Talk</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/signup">Signup</a>
+              </li>
+              <!-- <button class="navbar-btn">Let's interact with chatbot</button> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container-fluid">
+
+        <div class="row mt-3 justify-content-center">
+          <div class="col-md-10 text-center">
+            <h2 style="font-weight:bolder;font-size:35px;color:#1977cc">Psychological treatments for depression</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-2">
+          <div class="col-md-11">
+            <p style="font-size: 17px;">Psychological treatments (also known as talking therapies) have been found to be an effective way to treat depression. They can help you change your thinking patterns and improve your coping skills so you're better equipped to deal with life's stresses and conflicts. <br><br>
+            As well as supporting your recovery, psychological therapies can help you stay well by identifying and changing unhelpful thoughts and behaviour.<br><br>There are several different types of psychological treatments including:</p>
+            <ul style="color:#1977cc;">
+              <li>cognitive behaviour therapy (CBT)</li>
+              <li>interpersonal therapy (IPT)</li>
+              <li>behaviour therapy</li>
+              <li>mindfulness-based cognitive therapy (MBCT).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row mt-3 justify-content-center">
+          <div class="col-md-10 text-center">
+            <h2 style="font-weight:bolder;font-size:35px;color:#1977cc">Get Treatment from Best Psychiatrist Doctor</h2>
+
+            <select class="dr-city-select" id="search-city">
+              <option>City you are looking for treatment of depression</option>
+              <option>Mumbai</option>
+              <option>Pune</option>
+              <option>Delhi</option>
+              <option>Kolkata</option>
+              <option>Banglore</option>
+              <option>Ahmedabad</option>
+            </select>
+            <button class="dr-search-btn" onclick="searchDoctor()">Search for Doctor</button>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center mt-3">
+          <div class="col-md-10">
+            <p style="font-size: 25px;color:#1977cc;font-weight: lighter;" id="dr-list-text"></p>
+          </div>
+        </div>
+
+        <!-- Mumbai Doctors -->
+        <div class="row justify-content-center align-items-center mt-2 drall dr_Mumbai d-none">
+          <div class="col-md-4 mt-3">
+            <img src="./Images/Dr2-M.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-5 mt-3">
+            <h3 style="color:#1977cc">Dr. Naazneen Ladak</h3>
+            <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, DPM (Psychiatry) ,Psychiatrist, Psychotherapist, Psychologist</h5>
+            <p style="color:rgb(104, 102, 102)">17 Years Experience Overall</p>
+            <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Andheri West , Mumbai</span></p><p><span style="color:rgb(46, 45, 45)">₹2000 Consultation fee at Clinic</span></p>
+            <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/mumbai/doctor/dr-nazneen-psychiatrist-1?practice_id=1117710&referrer=doctor_listing&sem=true&specialization=Psychiatrist&utm_source=google" target="_blank">Book Appoinment</a></button>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <img src="./Images/Dr2-M.webp" class="img-fluid">
+          </div>
+          <div class="col-md-5 mt-3">
+            <h3 style="color:#1977cc">Dr. Aditi Chandrashekhar Acharya</h3>
+            <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">M.D. (Psychiatry), MBBS , Neuropsychiatrist, Addiction Psychiatrist</h5>
+            <p style="color:rgb(104, 102, 102)">16 Years Experience Overall</p>
+            <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Kurla East , Mumbai</span> </p>
+            <p><span style="color:rgb(46, 45, 45)">₹1300 Consultation fee at Clinic</span></p>
+            <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/mumbai/doctor/aditi-chandrashekhar-acharya-psychiatrist?practice_id=981488&referrer=doctor_listing&sem=true&specialization=Psychiatrist&utm_source=google" target="_blank">Book Appoinment</a></button>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <img src="./Images/Dr3-M1.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-5 mt-3">
+            <h3 style="color:#1977cc">Dr. Chetan Lokhande</h3>
+            <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, M.D. (Psychiatry)Psychiatrist, Addiction Psychiatrist, Neuropsychiatrist, Sexologist
+              </h5>
+            <p style="color:rgb(104, 102, 102)">13 Years Experience Overall</p>
+            <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Kurla East , Mumbai</span> </p>
+            <p><span style="color:rgb(46, 45, 45)">₹1300 Consultation fee at Clinic</span></p>
+            <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/mumbai/doctor/chetan-lokhande-psychiatrist-psychiatrist?practice_id=981488&referrer=doctor_listing&sem=true&specialization=Psychiatrist&utm_source=google" target="_blank">Book Appoinment</a></button>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <img src="./Images/DR4-M1.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-5 mt-3">
+            <h3 style="color:#1977cc">Dr. Rohan Bokdawala</h3>
+            <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">M.D. (Psychiatry), MBBS , Neuropsychiatrist, Addiction Psychiatrist</h5>
+            <p style="color:rgb(104, 102, 102)">16 Years Experience Overall</p>
+            <p><span style="color:rgb(0, 0, 0);font-weight:600;">Marine Lines , Mumbai</span> </p>
+            <p><span style="color:rgb(46, 45, 45)">₹2500 Consultation fee at Clinic</span></p>
+            <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/mumbai/doctor/aditi-chandrashekhar-acharya-psychiatrist?practice_id=981488&referrer=doctor_listing&sem=true&specialization=Psychiatrist&utm_source=google" target="_blank">Book Appoinment</a></button>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <img src="./Images/Dr5-M1.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-5 mt-3">
+            <h3 style="color:#1977cc">Dr. Jalpa Bhuta</h3>
+            <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, MD - Psychological Medicine, DNB - Psychiatry, MRCPsych Psychiatrist</h5>
+            <p style="color:rgb(104, 102, 102)">24 Years Experience Overall</p>
+            <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Lower Parel , Mumbai</span> </p>
+            <p><span style="color:rgb(46, 45, 45)">₹2000 Consultation fee at Clinic</span></p>
+            <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/mumbai/doctor/jalpa-bhuta-psychiatrist?practice_id=982258&referrer=doctor_listing&sem=true&specialization=Psychiatrist&utm_source=google" target="_blank">Book Appoinment</a></button>
+          </div>
+
+          </div>
+
+          <!-- Pune Doctors -->
+
+          <div class="row justify-content-center align-items-center mt-2 drall dr_Pune d-none">
+            <div class="col-md-4 mt-3">
+              <img src="./Images/Dr1-P1.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-5 mt-3">
+              <h3 style="color:#1977cc">Dr. Sumit Chandak</h3>
+              <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">M.D. (Psychiatry), MBBS Psychiatrist, Geriatric Psychiatrist, Neuropsychiatrist, Addiction Psychiatrist
+                </h5>
+              <p style="color:rgb(104, 102, 102)">20 Years Experience Overall</p>
+              <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Baner , Pune</span></p><p><span style="color:rgb(46, 45, 45)">₹1650 Consultation fee at Clinic</span></p>
+              <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/pune/doctor/sumit-chandak-psychiatrist1?practice_id=1176099&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+            </div>
+  
+            <div class="col-md-4 mt-3">
+              <img src="./Images/Dr2-P1.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-5 mt-3">
+              <h3 style="color:#1977cc">Dr. Bhushan Mhetre</h3>
+              <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, M.D. (Psychiatry) ,Psychiatrist, Neuropsychiatrist, Sexologist, Addiction Psychiatrist
+                </h5>
+              <p style="color:rgb(104, 102, 102)">18 Years Experience Overall</p>
+              <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Warje , Pune</span> </p>
+              <p><span style="color:rgb(46, 45, 45)">₹1500 Consultation fee at Clinic</span></p>
+              <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/pune/doctor/bhushan-mhetre-psychiatrist?practice_id=1117637&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+            </div>
+  
+            <div class="col-md-4 mt-3">
+              <img src="./Images/Dr3-P1.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-5 mt-3">
+              <h3 style="color:#1977cc">Dr. Trupti Vedpathak</h3>
+              <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, M.D. (Psychiatry)Psychiatrist, Addiction Psychiatrist, Neuropsychiatrist, Sexologist
+                </h5>
+              <p style="color:rgb(104, 102, 102)">19 Years Experience Overall</p>
+              <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Link Road , Pune</span> </p>
+              <p><span style="color:rgb(46, 45, 45)">₹1000 Consultation fee at Clinic</span></p>
+              <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/pune/doctor/trupti-tushar-vedpathak-psychiatrist?practice_id=988971&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+            </div>
+  
+            <div class="col-md-4 mt-3">
+              <img src="./Images/Dr4-P1.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-5 mt-3">
+              <h3 style="color:#1977cc">Dr. Roshita Khare</h3>
+              <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBSM.D. (Psychiatry) , Sexologist, Addiction Psychiatrist</h5>
+              <p style="color:rgb(104, 102, 102)">18 Years Experience Overall</p>
+              <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Baner , Pune</span> </p>
+              <p><span style="color:rgb(46, 45, 45)">₹1400 Consultation fee at Clinic</span></p>
+              <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/pune/doctor/roshitakhare-1-gmail-com-psychiatrist?practice_id=811745&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+            </div>
+  
+            <div class="col-md-4 mt-3">
+              <img src="./Images/Dr5-P1.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-5 mt-3">
+              <h3 style="color:#1977cc">Dr. Niket Kasar</h3>
+              <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">DPM (Psychiatry), MBBS Geriatric Psychiatrist, Psychiatrist, Psychotherapist, Sexologist, Addiction Psychiatrist</h5>
+              <p style="color:rgb(104, 102, 102)">23 Years Experience Overall</p>
+              <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Tilak Road , Pune</span> </p>
+              <p><span style="color:rgb(46, 45, 45)">1500 Consultation fee at Clinic</span></p>
+              <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/pune/doctor/dr-niket-kasar-1-psychiatrist?practice_id=1158397&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+            </div>
+  
+            </div>
+
+            <!-- Delhi Doctors -->
+            <div class="row justify-content-center align-items-center mt-2 drall dr_Delhi d-none">
+              <div class="col-md-4 mt-3">
+                <img src="./Images/Dr2-D1.png" class="img-fluid">
+              </div>
+              <div class="col-md-5 mt-3">
+                <h3 style="color:#1977cc">Dr. Manish Sarkar</h3>
+                <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, DPM (Psychiatry)
+
+                  Psychiatrist, Neuropsychiatrist, Addiction Psychiatrist
+                  </h5>
+                <p style="color:rgb(104, 102, 102)">21 Years Experience Overall</p>
+                <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at CR Park , Delhi</span></p><p><span style="color:rgb(46, 45, 45)">₹2000 Consultation fee at Clinic</span></p>
+                <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/delhi/doctor/drmanish-sarkar-1-gmail-com-psychiatrist?practice_id=827487&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+              </div>
+    
+              <div class="col-md-4 mt-3">
+                <img src="./Images/Dr1-D1.webp" class="img-fluid">
+              </div>
+              <div class="col-md-5 mt-3">
+                <h3 style="color:#1977cc">Dr. Manish Jain</h3>
+                <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, M.D. (Psychiatry) ,Psychiatrist, Neuropsychiatrist, Sexologist, Addiction Psychiatrist
+                  </h5>
+                <p style="color:rgb(104, 102, 102)">20 Years Experience Overall</p>
+                <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Pusa Road , Delhi</span> </p>
+                <p><span style="color:rgb(46, 45, 45)">₹1800 Consultation fee at Clinic</span></p>
+                <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/delhi/doctor/dr-manish-jain-3-psychiatrist?practice_id=680128&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+              </div>
+    
+              <div class="col-md-4 mt-3">
+                <img src="./Images/Dr3-D1.jpg" class="img-fluid">
+              </div>
+              <div class="col-md-5 mt-3">
+                <h3 style="color:#1977cc">Dr. Sugandha Gupta</h3>
+                <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, DNB - Psychiatry
+
+                  Psychiatrist
+                  </h5>
+                <p style="color:rgb(104, 102, 102)">18 Years Experience Overall</p>
+                <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Karol Bagh , Delhi</span> </p>
+                <p><span style="color:rgb(46, 45, 45)">₹1200 Consultation fee at Clinic</span></p>
+                <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/delhi/doctor/dr-sugandha-gupta-psychiatrist-1?practice_id=1029662&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+              </div>
+    
+              <div class="col-md-4 mt-3">
+                <img src="./Images/Dr4-D1.jpg" class="img-fluid">
+              </div>
+              <div class="col-md-5 mt-3">
+                <h3 style="color:#1977cc">Dr. Kushal jain</h3>
+                <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">M.D. (Psychiatry), MBBS, Master of Public Health (MPH)
+
+                  Psychiatrist, Addiction Psychiatrist, Geriatric Psychiatrist</h5>
+                <p style="color:rgb(104, 102, 102)">20 Years Experience Overall</p>
+                <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Lajpat Nagar , Delhi</span> </p>
+                <p><span style="color:rgb(46, 45, 45)">₹1100 Consultation fee at Clinic</span></p>
+                <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/delhi/doctor/kushal-jain-psychiatrist-2?practice_id=1122983&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+              </div>
+    
+              </div>
+
+            <!-- Kolkata Doctors -->
+            <div class="row justify-content-center align-items-center mt-2 drall dr_Kolkata d-none">
+              <div class="col-md-4 mt-3">
+                <img src="./Images/Dr1-K1.jpg" class="img-fluid">
+              </div>
+              <div class="col-md-5 mt-3">
+                <h3 style="color:#1977cc">Dr. Arijit Dutta Chowdhury</h3>
+                <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">
+                  MBBS, M.D. (Psychiatry), DPM (Psychiatry)
+                  
+                  Psychiatrist, Sexologist
+                  </h5>
+                <p style="color:rgb(104, 102, 102)">22 Years Experience Overall</p>
+                <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Kalikapur , Kolkata</span></p><p><span style="color:rgb(46, 45, 45)">₹1200 Consultation fee at Clinic</span></p>
+                <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/kolkata/doctor/arijit-dutta-chowdhury-psychiatrist?practice_id=1165958&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+              </div>
+    
+              <div class="col-md-4 mt-3">
+                <img src="./Images/Dr2-K1.webp" class="img-fluid">
+              </div>
+              <div class="col-md-5 mt-3">
+                <h3 style="color:#1977cc">Dr. Preeti Parakh</h3>
+                <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, M.D. (Psychiatry)
+
+                  Psychiatrist, Addiction Psychiatrist
+                  </h5>
+                <p style="color:rgb(104, 102, 102)">13 Years Experience Overall</p>
+                <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Minto Park , Kolkata</span> </p>
+                <p><span style="color:rgb(46, 45, 45)">₹1200 Consultation fee at Clinic</span></p>
+                <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/kolkata/doctor/preeti-parakh-psychiatrist-1?practice_id=1347501&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+              </div>
+    
+              <div class="col-md-4 mt-3">
+                <img src="./Images/Dr3-k1.jpg" class="img-fluid">
+              </div>
+              <div class="col-md-5 mt-3">
+                <h3 style="color:#1977cc">Dr. Arnab Ghosh Hajra</h3>
+                <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, M.D. (Psychiatry)
+
+                  Psychiatrist, Neuropsychiatrist, Geriatric Psychiatrist
+                  </h5>
+                <p style="color:rgb(104, 102, 102)">16 Years Experience Overall</p>
+                <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Baghbazar , Kolkata</span> </p>
+                <p><span style="color:rgb(46, 45, 45)">₹2000 Consultation fee at Clinic</span></p>
+                <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/kolkata/doctor/arnab-ghosh-hajra-psychiatrist?practice_id=1180642&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+              </div>
+    
+              <div class="col-md-4 mt-3">
+                <img src="./Images/Dr4-K1.jpg" class="img-fluid">
+              </div>
+              <div class="col-md-5 mt-3">
+                <h3 style="color:#1977cc">Dr. Supra Paul</h3>
+                <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">M.D. (Psychiatry), MBBS, Master of Public Health (MPH)
+
+                  Psychiatrist, Addiction Psychiatrist, Geriatric Psychiatrist</h5>
+                <p style="color:rgb(104, 102, 102)">22 Years Experience Overall</p>
+                <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Minto Park , Kolkata</span> </p>
+                <p><span style="color:rgb(46, 45, 45)">₹1000 Consultation fee at Clinic</span></p>
+                <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/kolkata/doctor/dr-supra-paul-homoeopath?practice_id=1263654&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+              </div>
+    
+              </div>
+
+              <!-- Banglore Doctor -->
+              <div class="row justify-content-center align-items-center mt-2 drall dr_Banglore d-none">
+                <div class="col-md-4 mt-3">
+                  <img src="./Images/Dr1-B1.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-5 mt-3">
+                  <h3 style="color:#1977cc">Dr. Naveen Jayaram</h3>
+                  <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">
+                    MBBS, M.D. (Psychiatry)
+
+                    Psychiatrist, Addiction Psychiatrist
+                    </h5>
+                  <p style="color:rgb(104, 102, 102)">15 Years Experience Overall</p>
+                  <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Whitefield , Banglore</span></p><p><span style="color:rgb(46, 45, 45)">₹1500 Consultation fee at Clinic</span></p>
+                  <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/bangalore/doctor/dr-naveen-jayaram-psychiatrist1?practice_id=1309151&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+                </div>
+      
+                <div class="col-md-4 mt-3">
+                  <img src="./Images/Dr2-B.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-5 mt-3">
+                  <h3 style="color:#1977cc">Dr. Venkatesh Babu G M</h3>
+                  <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, M.D. (Psychiatry)
+
+                    Psychiatrist, Neuropsychiatrist, Psychotherapist, Addiction Psychiatrist, Geriatric Psychiatrist
+                    </h5>
+                  <p style="color:rgb(104, 102, 102)">17 Years Experience Overall</p>
+                  <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at HSR Layout , Banglore</span> </p>
+                  <p><span style="color:rgb(46, 45, 45)">₹1000 Consultation fee at Clinic</span></p>
+                  <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/bangalore/doctor/dr-venkatesh-babu-g-m-psychiatrist?practice_id=1259763&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+                </div>
+      
+                <div class="col-md-4 mt-3">
+                  <img src="./Images/Dr3-B1.webp" class="img-fluid">
+                </div>
+                <div class="col-md-5 mt-3">
+                  <h3 style="color:#1977cc">Dr. Shilpa Sri S.K</h3>
+                  <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, M.D. (Psychiatry)
+  
+                    Psychiatrist
+                    </h5>
+                  <p style="color:rgb(104, 102, 102)">19 Years Experience Overall</p>
+                  <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Basaveshwanagar , Banglore</span> </p>
+                  <p><span style="color:rgb(46, 45, 45)">₹850 Consultation fee at Clinic</span></p>
+                  <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/bangalore/doctor/dr-shilpasri-s-k-psychiatrist-psychiatrist?practice_id=1062975&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+                </div>
+      
+                <div class="col-md-4 mt-3">
+                  <img src="./Images/Dr4-B1.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-5 mt-3">
+                  <h3 style="color:#1977cc">Dr. Shivadev M</h3>
+                  <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, M.D. (Psychiatry)
+
+                    Sexologist, Psychiatrist</h5>
+                  <p style="color:rgb(104, 102, 102)">17 Years Experience Overall</p>
+                  <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Koramangala Block , Banglore</span> </p>
+                  <p><span style="color:rgb(46, 45, 45)">₹1000 Consultation fee at Clinic</span></p>
+                  <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/bangalore/doctor/shivadev-m-psychiatrist?practice_id=1177154&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+                </div>
+      
+                </div>
+
+              <!-- Gujarat Doctor -->
+              <div class="row justify-content-center align-items-center mt-2 drall dr_Ahmedabad d-none">
+                <div class="col-md-4 mt-3">
+                  <img src="./Images/Dr1-A1.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-5 mt-3">
+                  <h3 style="color:#1977cc">Dr. Kausha H. Khamar</h3>
+                  <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">
+                    MBBS, M.D. (Psychiatry)
+
+                    Psychiatrist, Addiction Psychiatrist
+                    </h5>
+                  <p style="color:rgb(104, 102, 102)">19 Years Experience Overall</p>
+                  <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Maninagar , Ahmedabad</span></p><p><span style="color:rgb(46, 45, 45)">₹600 Consultation fee at Clinic</span></p>
+                  <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/ahmedabad/doctor/kausha-h-khamar-homeopath-11?practice_id=896424&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+                </div>
+      
+                <div class="col-md-4 mt-3">
+                  <img src="./Images/Dr2-A1.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-5 mt-3">
+                  <h3 style="color:#1977cc">Dr. Dharmesh V Patel</h3>
+                  <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, MD - Psychological Medicine, DPM (Psychiatry)
+
+                    Psychiatrist, Addiction Psychiatrist, Psychotherapist, Sexologist
+                    </h5>
+                  <p style="color:rgb(104, 102, 102)">25 Years Experience Overall</p>
+                  <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Ellisbridge , Ahmedabad</span> </p>
+                  <p><span style="color:rgb(46, 45, 45)">₹1000 Consultation fee at Clinic</span></p>
+                  <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/ahmedabad/doctor/dharmesh-v-patel-psychiatrist?practice_id=1109308&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+                </div>
+      
+                <div class="col-md-4 mt-3">
+                  <img src="./Images/Dr3-A1.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-5 mt-3">
+                  <h3 style="color:#1977cc">Dr. Paresh Thakkar</h3>
+                  <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">MBBS, M.D. (Psychiatry)
+  
+                    Psychiatrist
+                    </h5>
+                  <p style="color:rgb(104, 102, 102)">31 Years Experience Overall</p>
+                  <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Naranpura Vistara , Ahmedabad</span> </p>
+                  <p><span style="color:rgb(46, 45, 45)">₹500 Consultation fee at Clinic</span></p>
+                  <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/ahmedabad/doctor/dr-paresh-thakkar-ayurveda?practice_id=1321608&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+                </div>
+      
+                <div class="col-md-4 mt-3">
+                  <img src="./Images/Dr4-A.jpeg" class="img-fluid">
+                </div>
+                <div class="col-md-5 mt-3">
+                  <h3 style="color:#1977cc">Dr. Varsha Deshpande</h3>
+                  <h5 style="font-weight:lighter;font-size: 20px;color:rgb(104, 102, 102)">BAMS, Post Graduate Course in Counselling Psychology
+
+                    AYUSHAyurveda, Psychologist</h5>
+                  <p style="color:rgb(104, 102, 102)">26 Years Experience Overall</p>
+                  <p><span style="color:rgb(0, 0, 0);font-weight:600;">Clinic at Shilaj , Ahmedabad</span> </p>
+                  <p><span style="color:rgb(46, 45, 45)">₹500 Consultation fee at Clinic</span></p>
+                  <button class="btn-apt"><a style="color:white !important;text-decoration: none;" href="https://www.practo.com/ahmedabad/doctor/varsha-deshpande-ayurveda?practice_id=1321751&specialization=Depression%20treatment&referrer=doctor_listing&category_name=service&category_id=144634" target="_blank">Book Appoinment</a></button>
+                </div>
+      
+                </div>
+        <!-- Start of footer -->
+        <div class="row justify-content-evenlyp pb-2 pt-4 mt-3" style="background-color: #f1f7fd;">
+          <div class="col-md-6 text-center">
+            <p>© Copyright <span style="color:#1977cc;font-weight: bold;">Better-Talk.</span>  All Rights Reserved</p>
+          </div>
+          <div class="col-md-4 text-end">
+            <p style="color:#1977cc;font-size: 23px;"><i class="bi bi-twitter"></i> &nbsp; &nbsp;<i class="bi bi-facebook"></i> &nbsp;&nbsp;<i class="bi bi-instagram"></i> &nbsp;&nbsp;<i class="bi bi-whatsapp"></i> &nbsp;&nbsp;<i class="bi bi-linkedin"></i></p>
+          </div>
+        </div>
+        <!-- End of footer -->
+
+
+
+        <!-- end of main container-fluid -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./assests/JS/doctor.js"></script>
+
+  </body>
+</html>

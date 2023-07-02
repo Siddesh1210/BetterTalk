@@ -1,0 +1,2 @@
+# BetterTalkDB
+BetterTalk Project

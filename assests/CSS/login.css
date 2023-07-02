@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+.loginbody
+{
+    margin:0;
+    padding:0;
+    background-color: rgb(65, 132, 247);
+    font-family: 'Poppins', sans-serif;
+}
+
+.login
+{
+    width:400px;
+    border:1px solid rgb(134, 132, 132);
+    padding:10px;
+    background-color: white;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.inp
+{
+    width:100%;
+    padding:10px;
+    box-sizing: border-box;
+    margin:10px 0px;
+    font-size: 16px;
+    border-radius:7px;
+    border:1px solid rgb(189, 186, 186);
+    color:rgb(65, 132, 247);
+}
+
+.inp:focus
+{
+    outline:none;
+    border:1px solid rgb(65, 132, 247);
+}
+
+.loginbtn
+{
+    padding:8px 32px;
+    font-size: 16px;
+    background-color:rgb(65, 132, 247) ;
+    color:white;
+    border:none;
+    border-radius:7px;
+    cursor: pointer;
+}
+
+
+.link
+{
+    text-decoration: none;
+    color:rgb(65, 132, 247) ;
+}
+
+.h2tag{
+    margin:10px;
+}
+
+.ptag{
+    margin:10px;
+}
+
+.logincontainer
+{
+    width:100vw;
+    /* height:100vh; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin:50px auto;
+}
+

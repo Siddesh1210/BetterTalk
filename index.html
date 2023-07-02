@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Better Talk</title>
+    <link rel="stylesheet" href="./assests/CSS/style.css">
+    <!-- Bootsrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- chatbot CSS -->
+    <link rel="stylesheet" href="./assests/CSS/chatbot.css">
+    
+  </head>
+  <body>
+    <!-- chatbot code Start -->
+    <div class="chatbot-container" id="chatbot-containerId">
+      <div class="chatbot-header" style="display:flex;justify-content: space-between;align-items: center;">
+        <h5 style="margin:0px !important;">BetterTalk-Chatbot</h5>
+        <h5 id="chatbot-icon2" style="cursor:pointer">X</h5>
+      </div>
+      <div class="chatbot-body">
+        <div class="chatbot-message bot">
+          <p>Hii! I'm Winky your Depression guide chatbot.</p><br>
+          <p>Press any key to begin :</p>
+        </div>
+      </div>
+      <div class="chatbot-footer">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+    <img src="./Images/icons8-chatbotIcon.png" id="chatbot-icon" style="position: fixed;right:30px;bottom:10px;cursor:pointer">
+    <!-- chatbot code End -->
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color:#2c4964;font-size: 30px !important;font-weight: bolder;">Better Talk</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/signup">Signup</a>
+              </li>
+              <button class="navbar-btn" id="chatbot-icon3">Let's interact with chatbot</button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+
+    <div class="container-fluid">
+        <!-- Hero session start -->
+        <div class="row align-items-center hero">
+            <div class="col-md-6 ps-4">
+                <h3 style="font-weight: bolder;color:#2c4964;letter-spacing: 2px;padding:10px 0px;font-size: 40px;">WE'RE DETERMINED FOR YOUR BETTER LIFE</h3>
+                <button class="chat-btn" id="chatbot-icon4">LET'S START CHATTING</button>
+            </div>
+        </div>
+        <!-- Hero session end -->
+
+        <!-- Service session start -->
+        <div class="row justify-content-evenly align-items-center my-3" >
+            <div class="col-md-4 py-5 px-3 box" style="background-color: #1977cc;color:white">
+                <h3 class="font-size:30px;font-weight:bolder">Online Doctor Consultancy</h3>
+                <p>Today is your opportunity to build the tomorrow you want"
+                  Get consultancy on your fingertips, on one click from the home. Depression is something which is not talked around. We have the fastest way to connect you, direct contact with doctor<p>
+            </div>
+            <div class="col-md-2 box px-4 py-3 text-center">
+                <h1><i class="bi bi-clipboard2-pulse" style="color:#1977cc;"></i></h1>
+                <h5 style="font-weight: bolder;">Fitness Tips</h5>
+                <p>The thing about meditation is: You become more and more you"
+                  If you the got problem, we have solution</p>
+            </div>
+
+            <div class="col-md-2 box px-4 py-3 text-center">
+                <h1><i class="bi bi-calendar3" style="color:#1977cc"></i></h1>
+                <h5 style="font-weight: bolder;">Nutritional Guide</h5>
+                <p>To fast moving generation, food preferences have changed so get the correct nutritional tips from us  </p>
+            </div>
+
+            <div class="col-md-2 box px-4 py-3 text-center">
+                <h1><i class="bi bi-columns-gap" style="color:#1977cc"></i></h1>
+                <h5 style="font-weight: bolder;">Social Live Event</h5>
+                <p>People are busy in workload they start to live alone so come join us in an gathering</p>
+            </div>
+            
+
+        </div>
+        <!-- Service session End -->
+
+        <!-- About session start -->
+        <div class="row align-items-center my-5">
+            <div class="col-md-6">
+                <img src="/Images/about.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2 style="font-weight: bolder;color:#1977cc" class="py-2">About Better-Talk</h2>
+                <h5 class="pt-3" style="color:#2c4964;font-weight: bold;">Who we are?</h5>
+                <p style="margin:5px 0px;font-weight: lighter;">We are providing you easy access to our website and access to your fingertips by providing things such as motivational videos, nutritional tips.</p>
+
+                <h5 class="pt-3" style="color:#2c4964;font-weight: bold;">How we work?</h5>
+                <p style="margin:5px 0px;font-weight: lighter;">After landing on our page you will interact with our chatbot, through the given input you will redirected to a page wherein after filling up the certain set of answers to questions.</p>
+
+                <h5 class="pt-3" style="color:#2c4964;font-weight: bold;">Why us?</h5>
+                <p style="margin:5px 0px;font-weight: lighter;">Since we are providing a chatbot on our website it would be a one to one access to the consultant and you. Waiting time is less.</p>
+            </div>
+        </div>
+        <!-- About session end -->
+
+        <!-- service session start -->
+        <div class="row justify-content-center my-2" id="service">
+            <div class="col-md-10 text-center">
+                <h2 style="color:#2c4964;font-weight: bolder;">Services</h2>
+                <p style="font-size: 20px;">Have a list of services must be preferred after interacting with chatbot</p>
+            </div>
+        </div>
+        
+        <div class="row justify-content-evenly">
+          <div class="col-md-3 p-5 border service-box">
+            <p class="doctor-tag"><span class="doctor-text">Doctor Consultancy</span><br>Get best doctor list available in your town.</p>
+            <h2 class="text-end"><a href="consultancy" class="a1"><i class="bi bi-arrow-right-circle-fill"></i></a></h2>
+
+          </div>
+
+            <div class="col-md-3 p-5 border service-box">
+              <p class="doctor-tag"><span class="doctor-text">Motivational Video</span><br>Get motivational video links and watch them at your home pace.</p>
+              <h2 class="text-end"><a href="/videos" class="a1"><i class="bi bi-arrow-right-circle-fill"></i></a></h2>
+
+            </div>
+
+            <div class="col-md-3 p-5 border service-box">
+              <p class="doctor-tag"><span class="doctor-text">Social Live Events</span><br>Let's come out and enjoy social gathering live events.</p>
+              <h2 class="text-end"><a href="/meetup" class="a1"><i class="bi bi-arrow-right-circle-fill"></i></a></h2>
+            </div>
+
+            
+        </div>
+
+        
+        <div class="row justify-content-evenly my-2">
+          <div class="col-md-3 p-5 border service-box">
+            <p class="doctor-tag"><span class="doctor-text">Fitness Tips</span><br>Get best suitable meditation and Yoga tips.</p>
+            <h2 class="text-end"><a href="/fitnesstip" class="a1"><i class="bi bi-arrow-right-circle-fill"></i></a></h2>
+
+          </div>
+
+            
+
+            <div class="col-md-3 p-5 border service-box">
+              <p class="doctor-tag"><span class="doctor-text">Books Gallery</span><br>Download your favourite book as per your choice and enjoy reading.</p>
+              <h2 class="text-end"><a href="/book" class="a1"><i class="bi bi-arrow-right-circle-fill"></i></a></h2>
+            </div>
+
+            <div class="col-md-3 p-5 border service-box">
+                <p class="doctor-tag"><span class="doctor-text">Nutritional Care</span><br>Get tips to eat and avoid food during depression.</p>
+                <h2 class="text-end"><a href="/nutrition" class="a1"><i class="bi bi-arrow-right-circle-fill"></i></a></h2>
+            </div>
+        </div>
+        <!-- service session end -->
+
+        <!-- Start of footer -->
+        <div class="row justify-content-evenlyp pb-2 pt-4 mt-3" style="background-color: #f1f7fd;">
+          <div class="col-md-6 text-center">
+            <p>© Copyright <span style="color:#1977cc;font-weight: bold;">Better-Talk.</span>  All Rights Reserved</p>
+          </div>
+          <div class="col-md-4 text-end">
+            <p style="color:#1977cc;font-size: 23px;"><i class="bi bi-twitter"></i> &nbsp; &nbsp;<i class="bi bi-facebook"></i> &nbsp;&nbsp;<i class="bi bi-instagram"></i> &nbsp;&nbsp;<i class="bi bi-whatsapp"></i> &nbsp;&nbsp;<i class="bi bi-linkedin"></i></p>
+          </div>
+        </div>
+        <!-- End of footer -->
+
+
+
+        <!-- end of main container-fluid -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="./assests/JS/chatbot.js"></script>
+
+
+  </body>
+</html>

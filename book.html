@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Better Talk</title>
+    <link rel="stylesheet" href="./assests/CSS/style.css">
+    <!-- Bootsrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color:#2c4964;font-size: 30px !important;font-weight: bolder;">Better Talk</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/signup">Signup</a>
+              </li>
+              <!-- <button class="navbar-btn">Let's interact with chatbot</button> -->
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      <!-- books section start -->
+      <div class="container-fluid">
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-10 text-center">
+                <h4 style="font-weight: bolder;">Their is no friends as loyal as books - <span style="color:#1977cc">Ernest Hemingway</span></h4>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3" >
+            <div class="col-md-10">
+                <p style="text-align: justify;font-size: 20px;">Reading books can be a wonderful (and healthy) escape from the stress of everyday life. Simply by opening a book, you allow yourself to be invited into a literary world that distracts you from your daily stressors. Reading can even relax your body by lowering your heart rate and easing the tension in your muscles. A 2022 study at the University of Sussex found that reading can reduce stress by up to 68%.<br><br>
+
+                So one should find a book or magazine that piques your interest-a romantic paperback, gardening magazine, or even a cookbook. Set aside 30 minutes to read every day in a quiet place where you won't be interrupted.<span style="color:#1977cc">So below are fews lists of books that can help you in feeling relax and motivated :</span> </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-2 justify-content-center d-flex py-2">
+                <button class="btn btn-title  btn-title2 temp" onclick="allBooks()" id=first>All Books</button>
+            </div>
+            <div class="col-md-2 justify-content-center d-flex py-2">
+                <button class="btn btn-title2 temp" onclick="motivational()" id="second">Motivational</button>
+            </div>
+            <div class="col-md-2 justify-content-center d-flex py-2">
+                <button class="btn btn-title2 temp" onclick="adventurous()" id="third">Adventurous</button>
+            </div>
+            <div class="col-md-2 justify-content-center d-flex py-2">
+                <button class="btn btn-title2 temp" onclick="spiritual()" id="four">Spiritual</button>
+            </div>
+            <div class="col-md-2 justify-content-center d-flex py-2">
+                <button class="btn btn-title2 temp" onclick="humor()" id="five">Humor</button>
+            </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-3 text-center">
+            <div class="col-md-2 p-2 border inspire all">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61S-xKd5dqL.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 justify-content-center"><a href="./assests/BookPDF/The Miracle Morning_ The Not-So-Obvious Secret Guaranteed to Transform Your Life ( PDFDrive ).pdf" download class="a-book">Download Book</a></button>
+            </div>
+            <div class="col-md-2 p-2 border  inspire all">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51NhVfavv+L.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 "><a href="./assests/BookPDF/365bestinspirationalquotes.pdf" download class="a-book">Download Book</a></button>
+            </div>
+            <div class="col-md-2 p-2 border inspire all">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81N7FmJhbhL.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 justify-content-center"><a href="./assests/BookPDF/Life’s Amazing Secrets_ How to Find Balance and Purpose in Your Life ( PDFDrive ).pdf" download class="a-book">Download Book</a></button>
+            </div>
+            <div class="col-md-2 p-2 border inspire all">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81gFGNtsFXL.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 justify-content-center"><a href="./assests/BookPDF/The Motivation Myth_ How High Achievers Really Set Themselves Up to Win ( PDFDrive ).pdf" download class="a-book">Download Book</a></button>
+            </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-3 text-center">
+            <div class="col-md-2 p-2 border  adventure all">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81LtoftwWHL.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 "><a href="./assests/BookPDF/The Black Island (The Adventures of Tintin 7) ( PDFDrive ).pdf" download class="a-book">Download Book</a></button>
+            </div>
+            <div class="col-md-2 p-2 border adventure all">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91I1l6qxz9L.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 justify-content-center"><a href="./assests/BookPDF/Tintin and The Picaros (The Adventures of Tintin 23) ( PDFDrive ).pdf" download class="a-book">Download Book</a></button>
+            </div>
+            <div class="col-md-2 p-2 border adventure all">
+                <img src="https://pictures.abebooks.com/isbn/9780896592339-us.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 justify-content-center"><a href="./assests/BookPDF/The Black Island (The Adventures of Tintin 7) ( PDFDrive ).pdf" download class="a-book">Download Book</a></button>
+            </div>
+            <div class="col-md-2 px-2 border adventure all">
+                <img src="https://assets.localretailconnect.com/cr/product-image/64/9780310759164.jpg?tr=t-2?tr=w-300" class="img-fluid">
+                <button class="btn btn-book mt-3 justify-content-center"><a href="./assests/BookPDF/The Adventure Bible, NIV Book of Devotions. 365 Days of Adventure ( PDFDrive ).pdf" download class="a-book">Download Book</a></button>
+            </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-3 text-center">
+            <div class="col-md-2 p-2 border  spiritual all">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/810jrduHeoL.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 "><a href="./assests/BookPDF/The Science of the Rishis_ The Spiritual and Material Discoveries of the Ancient Sages of India ( PDFDrive ).pdf" download class="a-book">Download Book</a></button>
+            </div>
+            <div class="col-md-2 p-2 border spiritual all">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71+BZgg7-3L.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 justify-content-center"><a href="./assests/BookPDF/27 Stars, 27 Gods_ The Astrological Mythology of Ancient India ( PDFDrive ).pdf" download class="a-book">Download Book</a></button>
+            </div>
+            <div class="col-md-2 p-2 border spiritual all">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41rtR1El1RL.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 justify-content-center"><a href="./assests/BookPDF/spiritual_astrology.pdf" download class="a-book">Download Book</a></button>
+            </div>
+            <div class="col-md-2 p-2 border spiritual all">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71dkmQ7ho8L.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 justify-content-center"><a href="./assests/BookPDF/Hindu Methodology.pdf" download class="a-book">Download Book</a></button>
+            </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-3 text-center">
+            
+            <div class="col-md-2 px-2 pb-2 border humor all">
+                <img src="https://images.booksense.com/images/852/668/9798592668852.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 justify-content-center"><a href="./assests/BookPDF/Antic Hay Author Aldous Huxley.pdf" download class="a-book">Download Book</a></button>
+            </div>
+            <div class="col-md-2 p-2 border humor all">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71T8XP19TcL.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 justify-content-center"><a href="./assests/BookPDF/Three Men in a Boat Author Jerome K. Jerome.pdf" download class="a-book">Download Book</a></button>
+            </div>
+            <div class="col-md-2 p-2 border humor all">
+                <img src="https://m.media-amazon.com/images/I/61CwuXC3MpL.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 justify-content-center"><a href="./assests/BookPDF/A Prefect's Uncle Author P G Wodehouse.pdf" download class="a-book">Download Book</a></button>
+            </div>
+            <div class="col-md-2 p-2 border humor all">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Gentlemen_Prefer_Blondes_Cover_1926_Restored.jpg/1200px-Gentlemen_Prefer_Blondes_Cover_1926_Restored.jpg" class="img-fluid">
+                <button class="btn btn-book mt-3 "><a href="./assests/BookPDF/Gentlemen Prefer Blondes Author Anita Loos.pdf" download class="a-book">Download Book</a></button>
+            </div>
+        </div>
+
+        <!-- Start of footer -->
+        <div class="row justify-content-evenlyp pb-2 pt-4 mt-3" style="background-color: #f1f7fd;">
+            <div class="col-md-6 text-center">
+              <p>© Copyright <span style="color:#1977cc;font-weight: bold;">Better-Talk.</span>  All Rights Reserved</p>
+            </div>
+            <div class="col-md-4 text-end">
+              <p style="color:#1977cc;font-size: 23px;"><i class="bi bi-twitter"></i> &nbsp; &nbsp;<i class="bi bi-facebook"></i> &nbsp;&nbsp;<i class="bi bi-instagram"></i> &nbsp;&nbsp;<i class="bi bi-whatsapp"></i> &nbsp;&nbsp;<i class="bi bi-linkedin"></i></p>
+            </div>
+          </div>
+          <!-- End of footer -->
+
+        <!-- end of main container-fluid -->
+      </div>
+      <!-- books section end -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="./assests/JS/book.js"></script>
+  </body>
+</html>

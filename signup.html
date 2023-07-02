@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Talk - Signup</title>
+    <link rel="stylesheet" href="./assests/CSS/login.css">
+    <link rel="stylesheet" href="./assests/CSS/style.css">
+     <!-- Bootsrap Link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <!-- Bootstrap Icon -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body class="loginbody">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color:#2c4964;font-size: 30px !important;font-weight: bolder;">Better Talk</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/signup">Signup</a>
+              </li>
+              <!-- <button class="navbar-btn">Let's interact with chatbot</button> -->
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    <div class="logincontainer">
+        <div class="login">
+        <form>
+            <h2 class="h2tag">Register</h2>
+            <p class="ptag">To get access to all resources</p>
+            <input type="text" placeholder="Enter your name" class="inp" required id="name">
+            <input type="email" placeholder="Enter your email" class="inp" required id="email">
+            <input type="password" placeholder="Enter your password" class="inp" required id="pswd">
+            <input type="password" placeholder="Confirm your password" class="inp" required id="cpswd">
+            <button type="button" class="loginbtn" onclick="signup()">Signup</button>
+            <p class="ptag">Already has a account? <a href="/login" class="link">Login</a></p>
+        </form>
+        </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="./assests/JS/signup.js"></script>
+
+</body>
+</html>

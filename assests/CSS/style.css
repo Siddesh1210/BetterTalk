@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body
+{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.hero
+{
+    width:100vw;
+    height:90vh;
+    background-image: url(/Images/hero-bg.jpg);
+    background-size: cover;
+}
+
+.chat-btn
+{
+    padding:10px 40px;
+    border-radius: 25px;
+    background-color: #1977cc;
+    color:white;
+    border:none;
+}
+
+.navbar-btn
+{
+    padding:10px 20px;
+    border-radius: 25px;
+    background-color: #1977cc;
+    color:white;
+    border:none;
+}
+
+.nav-item a:hover {
+    transition: 0.3s ease-in-out;
+    color:#1977cc !important;
+}
+
+.box
+{
+    border-radius: 8px;
+    box-shadow:0px 0px 7px rgb(208, 206, 206);
+    -webkit-box-shadow:0px 0px 7px rgb(206, 203, 203);
+
+}
+
+.service-box:hover , .doctor-text:hover{
+    background-color: rgb(25,119,204);
+    color:white !important;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+.service-box h4{
+    color:#2c4964;
+    font-weight: bolder;
+}
+
+
+.doctor-text
+{
+    font-size:25px;
+    font-weight:bolder;
+    color:#2c4964;
+    letter-spacing: 1px;
+
+}
+
+
+.inp1
+{
+    width:45%;
+    padding:8px;
+    font-size: 16px;
+    margin:20px 10px;
+    border:1px solid rgb(205, 202, 202);
+}
+
+.inp2 , .textarea1
+{
+    width:94%;
+    padding:8px;
+    font-size: 16px;
+    margin:10px 10px;
+    border:1px solid rgb(205, 202, 202);
+    color:#1977cc;
+}
+
+.textarea1:focus
+{
+    outline: none;
+    border:1px solid #1977cc;
+}
+
+.send-message
+{
+    color:white;
+    background-color: #1977cc;
+    padding:10px 36px;
+    font-size: 16px;
+    border-radius: 26px;
+    margin:5px 10px;
+    border: none;
+}
+
+input:focus
+{
+    outline:none;
+    border:1px solid #1977cc;
+    color:#1977cc;
+}
+
+/* Book css start */
+.btn-book 
+{
+  color:white !important;
+  background-color: #1977cc !important;
+}
+
+.btn-title
+{
+  /* border:1px solid #1977cc !important; */
+  background-color:#1977cc !important;
+  color:white !important;
+}
+
+.btn-title2
+{
+    border:1px solid #1977cc !important;
+}
+
+a{
+    text-decoration: none;
+    background-color: none !important; 
+    color:black !important;
+}
+
+
+
+.a-book
+{
+    color:white !important;
+    text-decoration: none;
+}
+
+.service-box:hover .doctor-text ,
+.service-box:hover .a1 
+{
+    color:white !important;
+    transition: 0.6s ease-in-out;
+}
+
+.dr-inp
+{
+    width:48%;
+    font-size: 15px;
+    padding:8px;
+    margin:10px 3px;
+    border:1px solid rgb(201, 198, 198);
+}
+
+.dr-select
+{
+    border:1px solid rgb(201, 198, 198);
+    color:rgb(123, 121, 121);
+}
+
+.dr-text
+{
+    width:97%;
+    font-size: 15px;
+    padding:8px;
+    border:1px solid rgb(201, 198, 198);
+}
+
+.consultancy-btn
+{
+    padding:12px 32px;
+    background-color: #1977cc;
+    color:white;
+    border-radius: 28px;
+    border:none;
+    cursor: pointer;
+    margin:10px;
+}
+
+input:focus
+{
+    outline:none;
+    border:1px solid #1977cc;
+    color:#1977cc;
+}
+
+.dr-city-select
+{
+    width:80%;
+    font-size: 15px;
+    padding:8px;
+    margin:10px 0px 10px 3px;
+    border:1px solid rgb(201, 198, 198);
+    color:rgb(143, 141, 141);
+}
+
+.dr-search-btn
+{
+    padding:9px 32px;
+    font-size: 15px;
+    background-color: #1977cc;
+    color:white;
+    border:none;
+    cursor: pointer;
+}
+
+
+.dr-city-select:focus
+{
+    outline: none;
+    border:1px solid #1977cc; 
+    color:rgb(68, 67, 67);
+}
+.dr-select:focus ,.dr-text:focus  
+{
+    outline: none;
+    border:1px solid #1977cc; 
+}
+
+
+
+
+.btn-apt
+{
+    padding:7px 25px;
+    border-radius:5px;
+    background-color: #1977cc;
+    color:white;
+    font-size: 16px;
+    border:none;
+}
+
+.d-none
+{
+    display: none;
+}
