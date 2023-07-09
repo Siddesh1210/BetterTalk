@@ -6,8 +6,8 @@ help individuals cope with their mental health struggles.
 
 <img width="900" alt="Screenshot 2023-07-09 140507" src="https://github.com/Siddesh1210/BetterTalk/assets/99405624/99df4bd2-44c4-49b2-a805-7f9089b5e5a9">
 
-<img width="500" alt="Screenshot 2023-07-09 141011" src="https://github.com/Siddesh1210/BetterTalk/assets/99405624/ffdc42de-0db8-417c-b56e-6923d89a924b">
-<img width="500" alt="Screenshot 2023-07-09 140949" src="https://github.com/Siddesh1210/BetterTalk/assets/99405624/34fb1687-1beb-4435-8a64-569a0e5d9caf">
+<img width="450" alt="Screenshot 2023-07-09 141011" src="https://github.com/Siddesh1210/BetterTalk/assets/99405624/ffdc42de-0db8-417c-b56e-6923d89a924b">
+<img width="450" alt="Screenshot 2023-07-09 140949" src="https://github.com/Siddesh1210/BetterTalk/assets/99405624/34fb1687-1beb-4435-8a64-569a0e5d9caf">
 
 <img width="900" alt="Screenshot 2023-07-09 141059" src="https://github.com/Siddesh1210/BetterTalk/assets/99405624/dc488a91-da66-441f-bca9-2d11f1fc2bcb">
 
